@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Replacer</title>
+    <style>
+        body {
+            width: 200px;
+            font-family: Arial, sans-serif;
+        }
+        #storedPairs {
+            list-style-type: none;
+            padding: 0;
+        }
+        .pair {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Replace Text</h3>
+    <input type="text" id="findText" placeholder="Text to find" />
+    <input type="text" id="replaceText" placeholder="Replace with" />
+    <button id="replaceButton">Replace</button>
+    
+    <h3>Stored Replacements</h3>
+    <ul id="storedPairs"></ul>
+
+    <script src="popup.js"></script>
+</body>
+</html>
